@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+learning rails
 
-Things you may want to cover:
+the rails tutorial project with copilot and the aiwebdude:
 
-* Ruby version
+* Ruby version is 3.2.2
 
-* System dependencies
+* made with emacs and chruby
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
