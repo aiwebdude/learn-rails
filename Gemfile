@@ -4,16 +4,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.5"
+gem "rails", "7.0.6"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "1.6.3"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma", "6.3.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -27,20 +27,37 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# tutorial bootstrap sass
+gem "bootstrap-sass", "3.4.1"
+
+# mailchimp connector
+gem "gibbon", "3.5.0"
+
+# high voltage for static pages
+gem "high_voltage", "3.1.2"
+
+# jquery for rails
+gem "jquery-rails", "4.6.0"
+
+# Use Redis adapter to run Action Cable in production
+gem "redis", "4.4.0"
+
+# Use Active Model has_secure_password
+gem "bcrypt", "3.1.7"
+
+# Use Active Storage variant
+gem "image_processing", "1.12.2"
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible [
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-gem "bcrypt", "~> 3.1.7"
-
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
-
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-gem 'image_processing', '~> 1.12', '>= 1.12.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -50,8 +67,10 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem "pry", "~> 0.14.2"
-  gem "pry-doc", "~> 1.4"
+  gem "pry", "0.14.2"
+  gem "pry-doc", "1.4.0"
+  gem "better_errors", "2.10.1"
+  gem "rails_layout", "1.0.42"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
